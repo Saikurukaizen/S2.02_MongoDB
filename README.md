@@ -34,7 +34,7 @@ Incluye también una serie de queries basadas en la base de datos entregada en e
 
 ```bash
 
-git clone https://github.com/tu-usuario/cul-d-ampolla-mongodb.git
+git clone https://github.com/Saikurukaizen/S2.02_MongoDB.git
 
 
 ```
