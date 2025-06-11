@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "68495ca0543805d2241ea4a3"
+  },
+  "nombre": "Jordi Serra",
+  "direccion": "Passeig de Gràcia, 12, 1º2ª, 08007 Barcelona",
+  "telefono": 678123456,
+  "email": "jordi.serra@email.com",
+  "created_at": {
+    "$date": "2023-07-19T00:00:00.000Z"
+  },
+  "recomendado_por": {
+    "$oid": "68495ca0543805d2241ea4a2"
+  },
+  "id_cliente": {
+    "$oid": "68495ca0543805d2241ea4a3"
+  }
+}]

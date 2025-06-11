@@ -1,0 +1,130 @@
+Operadores MongoDB dede el Shell:
+
+Para empezar, podemos usr operadores y funciones de JavaScript para operar con la máquina.
+Ej:
+function factorial(n) {if (n <= 1) return 1; return n * factorial(n-1)}
+
+db - Ver a base de datos actual
+Por defecto, en MongoDB nos conecta a esta db llamada test
+show dbs - enseña la base de datos (admin, config y local es para el funcionamiento de MongoDB)
+help - Muestra una lista de comandos
+cls - limpiar
+db.help() - métodos que se puedan ejecutar en Mongo. Listado de todos los comando
+use nombredb - Crea una base de datos con el nombre escogido
+si usas db, te muestra la db seleccionada
+
+LISTA DE COMANDOS DE MONGODB
+
+mongo> db.help()
+Métodos de DB:
+        db.adminCommand(nameOrDocument) - cambia a la base de datos 'admin' y ejecuta el comando [simplemente llama a db.runCommand(...)]
+        db.aggregate([pipeline], {options}) - realiza una agregación sin colección en esta base de datos; devuelve un cursor
+        db.auth(nombreusuario, contraseña)
+        db.cloneDatabase(fromhost) - sólo funcionará con MongoDB 4.0 e inferiores
+        db.commandHelp(name) devuelve la ayuda del comando
+        db.copyDatabase(fromdb, todb, fromhost) - sólo funcionará con MongoDB 4.0 e inferiores
+        db.createCollection(name, {size: ..., capped: ..., max: ...})
+        db.createUser(usuarioDocumento)
+        db.createView(nombre, viewOn, [{$operador: {...}}, ...], {viewOptions})
+        db.currentOp() muestra las operaciones actualmente en ejecución en la db
+        db.dropBaseDeDatos(writeConcern)
+        db.dropUser(nombredeusuario)
+        db.eval() - obsoleto
+        db.fsyncLock() vacía los datos en el disco y bloquea el servidor para las copias de seguridad
+        db.fsyncUnlock() desbloquea el servidor tras un db.fsyncLock()
+        db.getCollection(cname) igual que db['cname'] o db.cname
+        db.getCollectionInfos([filter]) - devuelve una lista que contiene los nombres y opciones de las colecciones de la db
+        db.getNombresDeColección()
+        db.getLastError() - sólo devuelve la cadena msg del error
+        db.getLastErrorObj() - devuelve el objeto de estado completo
+        db.getLogComponents()
+        db.getMongo() obtiene el objeto de conexión al servidor
+        db.getMongo().setSlaveOk() permitir consultas en un servidor esclavo de replicación
+        db.getName()
+        db.getProfilingLevel() - obsoleto
+        db.getProfilingStatus() - devuelve si el perfilado está activado y el umbral lento
+        db.getReplicationInfo()
+        db.getSiblingDB(name) obtiene la db en el mismo servidor que ésta
+        db.getWriteConcern() - devuelve la preocupación de escritura utilizada para cualquier operación en esta db, heredada del objeto servidor si está establecida
+        db.hostInfo() obtiene detalles sobre el host del servidor
+        db.isMaster() comprueba el estado primario de la réplica
+        db.killOp(opid) mata la operación actual en la db
+        db.listCommands() lista todos los comandos de la db
+        db.loadServerScripts() carga todos los scripts en db.system.js
+        db.logout()
+        db.printCollectionStats()
+        db.printReplicationInfo()
+        db.printShardingStatus()
+        db.printSlaveReplicationInfo()
+        db.resetError()
+        db.runCommand(cmdObj) ejecuta un comando de la base de datos. si cmdObj es una cadena, la convierte en {cmdObj: 1}
+        db.serverStatus()
+        db.setLogLevel(level,<componente>)
+        db.setProfilingLevel(level,slowms) 0=off 1=slow 2=all
+        db.setVerboseShell(flag) mostrar información extra en la salida del shell
+        db.setWriteConcern(<preocupaciónescritura doc>) - establece la preocupación de escritura para las escrituras en la db
+        db.shutdownServer()
+        db.stats()
+        db.unsetWriteConcern(<preocupación por la escritura doc>) - anula la preocupación por la escritura para las escrituras en la base de datos
+        db.version() versión actual del servidor
+        db.watch() - abre un cursor de flujo de cambios para que una base de datos informe de todos los cambios en sus colecciones no pertenecientes al sistema.
+NOTA: Cuando nosotros usamos use, le decimos a mongo que vamos a crear una base de datos, pero Mongo no interpretará
+	que existe, hasta que no le insertemos, al menos un dato.
+db.createCollection (haremos, por ejemplo, una coleccion de productos)
+db.productos.insert({"name": "laptop"}) - Va a crear la coleccion llamada Producto, con un dato name al darle enter:
+
+	WriteResult({"nInserted" : 1})
+ahora, si hacemos un show dbs, va a aparecer nuestra db
+show Collections - para ver las colecciones de nuestra db
+Para eliminar una db, db.dropDatabse() importante comprobar la db que estamos usando,
+	 porque db.dropDatabase() borrará la base de datos actual, y hay que comprobarlo.
+
+COMO FUNCIONA LAS COLECCIONES
+
+use webstore. e
+show collections
+db.createCollection("users"). E
+se crea la coleccion users
+db.createCollection("products")
+db.createCollection("sellers")
+
+NOTA: tipeando flecha arriba/abajo del teclado puedes navegar en el historial de mi consola
+
+RECUERDA el db.help() para ayuda a los comandos!
+
+db.products.drop() - Borra la colleción "products" de la db actual (webstore)
+
+db ------- collections ------- documents
+
+UN DOCUMENTO ES UN OBJETO JSON!!!
+
+show collections
+
+NOTA: guardar un dato dentro de una colección que no existe y Mongo lo creará
+db.products.insert({
+    "nombre": "laptop",
+    "precio": 40.2,
+    "active": true,
+    "created_at": new Date("12/12/1999"),
+    "somedata": [1, "a", []],
+    "factucturer": {
+        "name": "Dell",
+        "version": "xps",
+        "location": {
+            "country": "USA",
+            "city": "Austin"
+        }
+    }
+}) E..
+WriteResult({"nInserted": 1})
+
+Ha creado la collection llamada products, con nuestro objeto JSON
+
+db.products.find() - busca todos los datos de products. Te los muestra en una sola línea. Si quieres ordenarlo y hacerlo visible,
+escribe db.products.find().pretty()
+
+MongoDB ha hecho guardar el dato con un Id. Lo genera internamente con un algoritmo. Adicionalmente, ha guardado el dato.
+Básicamente, MongoDB ha guardado el objeto JSON en formato BSON (Binary JSON)
+
+
+

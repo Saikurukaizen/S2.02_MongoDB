@@ -1,0 +1,23 @@
+[{
+  "_id": {
+    "$oid": "68495c25543805d2241ea4a1"
+  },
+  "marca": "Oakley",
+  "graduacion": {
+    "lente_izq": 1.25,
+    "lente_der": 1.75
+  },
+  "montura": [
+    "flotante",
+    "plastico",
+    "metal"
+  ],
+  "color": {
+    "lente_izq": "verde",
+    "lente_der": "verde"
+  },
+  "precio": 180,
+  "empleado_id": {
+    "$oid": "68495cdb543805d2241ea4a4"
+  }
+}]
