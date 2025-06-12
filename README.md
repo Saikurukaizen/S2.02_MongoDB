@@ -1,4 +1,4 @@
-# S2.03 & S1.04: Bases de datos NoSQL con MongoDB
+# S2.03 & S2.04: Bases de datos NoSQL con MongoDB
 
 ## 👤 Alumno
 Desarrollado por Marc Sanchez
