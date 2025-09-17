@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "68495ca0543805d2241ea4a3"
+  },
+  "nombre": "Jordi Serra",
+  "direccion": "Passeig de Gràcia, 12, 1º2ª, 08007 Barcelona",
+  "telefono": 678123456,
+  "email": "jordi.serra@email.com",
+  "created_at": {
+    "$date": "2023-07-19T00:00:00.000Z"
+  },
+  "recomendado_por": {
+    "$oid": "68495ca0543805d2241ea4a2"
+  }
+},
+{
+  "_id": {
+    "$oid": "68495ca0543805d2241ea4a5"
+  },
+  "nombre": "Maria Becerra",
+  "direccion": "Casp, 20, 1º1ª, 08002 Barcelona",
+  "telefono": 648927645,
+  "email": "maria.becerra@email.com",
+  "created_at": {
+    "$date": "2023-10-20T00:00:00.000Z"
+  },
+  "recomendado_por": {
+    "$oid": "68495ca0543805d2241ea4a2"
+  }
+},
+{
+  "_id": {
+    "$oid": "68495ca0543805d2241ea4a6"
+  },
+  "nombre": "Nestor Delgado",
+  "direccion": "Av. de les Corts Catalanes, 845-847, 6º 2ª, 08010 Barcelona",
+  "telefono": 666666666,
+  "email": "nestor.delgado@email.com",
+  "created_at": {
+    "$date": "2023-10-25T00:00:00.000Z"
+  },
+  "recomendado_por": {
+    "$oid": "68495ca0543805d2241ea4a5"
+  }
+}]

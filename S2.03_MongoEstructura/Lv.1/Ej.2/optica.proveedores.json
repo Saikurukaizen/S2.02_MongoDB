@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "68495adf543805d2241ea49e"
+  },
+  "nombre": "Googles Asociates S.L",
+  "direccion": {
+    "calle": "Avenida Diagonal",
+    "numero": "456",
+    "piso": "3",
+    "puerta": "C",
+    "ciudad": "Barcelona",
+    "cp": 8037,
+    "pais": "España"
+  },
+  "telefono": 934112233,
+  "fax": 934112234,
+  "nif": "B98765432"
+}]

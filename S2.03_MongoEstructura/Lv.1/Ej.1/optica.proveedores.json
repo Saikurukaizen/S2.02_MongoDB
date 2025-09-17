@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "68495adf543805d2241ea49e"
+  },
+  "nombre": "VisionPlus S.A.",
+  "direccion": {
+    "calle": "Avenida Diagonal",
+    "numero": "456",
+    "piso": "3",
+    "puerta": "C",
+    "ciudad": "Barcelona",
+    "cp": 8037,
+    "pais": "España"
+  },
+  "telefono": 934112233,
+  "fax": 934112234,
+  "nif": "B98765432"
+},
+{
+  "_id": {
+    "$oid": "68495b0f543805d2241ea49f"
+  },
+  "nombre": "OpticaWorld S.L.",
+  "direccion": {
+    "calle": "Calle Mayor",
+    "numero": "123",
+    "piso": "1",
+    "puerta": "A",
+    "ciudad": "Madrid",
+    "cp": 28013,
+    "pais": "España"
+  },
+  "telefono": 915667788,
+  "fax": 915667789,
+  "nif": "B12345678"
+}]

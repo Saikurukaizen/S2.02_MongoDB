@@ -1,0 +1,100 @@
+[
+  {
+    "_id": {
+      "$oid": "68495ca0543805d2241ea4a3"
+    },
+    "nombre": "Jordi Serra",
+    "direccion": "Passeig de Gràcia, 12, 1º2ª, 08007 Barcelona",
+    "telefono": 678123456,
+    "email": "jordi.serra@email.com",
+    "created_at": {
+      "$date": "2023-07-19T00:00:00.000Z"
+    },
+    "gafas": [
+      {
+        "marca": "Rayban",
+        "montura": "pasta",
+        "graduacion": {
+          "Lente izq": 2.3,
+          "Lente der": 2.0
+        },
+        "color": {
+          "Lente izq": null,
+          "Lente der": null
+        },
+        "precio": 127.0,
+        "proveedor": "VisionPlus S.A."
+      },
+      {
+        "marca": "Oakley",
+        "montura": "metal",
+        "graduacion": {
+          "Lente izq": 1.5,
+          "Lente der": 1.0
+        },
+        "color": {
+          "Lente izq": null,
+          "Lente der": null
+        },
+        "precio": 150.0,
+        "proveedor": "OpticaWorld S.L."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68495ca0543805d2241ea4a4"
+    },
+    "nombre": "Marta López",
+    "direccion": "Carrer de Balmes, 34, 2ºA, 08007 Barcelona",
+    "telefono": 612345678,
+    "email": "marta.lopez@email.com",
+    "created_at": {
+      "$date": "2023-07-20T00:00:00.000Z"
+    },
+    "gafas": [
+      {
+        "marca": "Ray-Ban",
+        "montura": "metal",
+        "graduacion": {
+          "Lente izq": 1.0,
+          "Lente der": 1.0
+        },
+        "color": {
+          "Lente izq": null,
+          "Lente der": null
+        },
+        "precio": 130.0,
+        "proveedor": "VisionPlus S.A."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68495ca0543805d2241ea4a5"
+    },
+    "nombre": "Luis García",
+    "direccion": "Rambla de Catalunya, 45, 3ºB, 08007 Barcelona",
+    "telefono": 698765432,
+    "email": "luis.garcia@email.com",
+    "created_at": {
+      "$date": "2023-07-21T00:00:00.000Z"
+    },
+    "gafas": [
+      {
+        "marca": "Gucci",
+        "montura": "pasta",
+        "graduacion": {
+          "Lente izq": 2.3,
+          "Lente der": 2.5
+        },
+        "color": {
+          "Lente izq": "rojo",
+          "Lente der": "verde"
+        },
+        "precio": 300.0,
+        "proveedor": "VisionPlus S.A."
+      }
+    ]
+  }
+]
