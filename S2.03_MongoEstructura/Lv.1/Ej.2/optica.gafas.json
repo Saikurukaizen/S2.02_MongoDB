@@ -3,11 +3,7 @@
     "$oid": "68495c25543805d2241ea4a1"
   },
   "marca": "Brand",
-  "montura": [
-    "flotante",
-    "plastico",
-    "metal"
-  ],
+  "montura": "metal",
   "proveedor_id": {
     "$oid": "68495cdb543805d2241ea4a4"
   },
