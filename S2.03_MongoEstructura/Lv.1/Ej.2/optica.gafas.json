@@ -3,12 +3,22 @@
     "$oid": "68495c25543805d2241ea4a1"
   },
   "marca": "Brand",
-  "montura": "metal",
-  "proveedor_id": {
-    "$oid": "68495cdb543805d2241ea4a4"
-  },
-  "precio": 180,
-  "cliente_id": {
-    "$oid": "68495cdb543805d2241ea4a4"
+  "graduacion": {
+    "lente_izq.": 1.5,
+    "lente_der": 1.25
   }
+  "montura": "metal",
+  "color_vidrios": {
+    "izquierdo": "azul",
+    "derecho": "azul"
+  }
+  "precio": 180,
+  "proveedor_id": {
+    "$oid": "68495adf543805d2241ea49e"
+  },  
+  "clientes_id": [
+    { "$oid": "68495ca0543805d2241ea4a3" },
+    { "$oid": "68495ca0543805d2241ea4a5" },
+    { "$oid": "68495ca0543805d2241ea4a6" }
+  ]
 }]
