@@ -14,11 +14,18 @@
   }
   "precio": 180,
   "proveedor_id": {
-    "$oid": "68495adf543805d2241ea49e"
+    "$oid": "68495adf543805d2241ea49e",
+    "nombre": "Googles Associate S.L"
   },  
   "clientes_id": [
-    { "$oid": "68495ca0543805d2241ea4a3" },
-    { "$oid": "68495ca0543805d2241ea4a5" },
-    { "$oid": "68495ca0543805d2241ea4a6" }
+    { "$oid": "68495ca0543805d2241ea4a3",
+      "nombre": "Jordi Serra"
+    },
+    { "$oid": "68495ca0543805d2241ea4a5",
+      "nombre": "Maria Becerra"
+    },
+    { "$oid": "68495ca0543805d2241ea4a6",
+      "nombre": "Nestor Delgado"
+    }
   ]
 }]
